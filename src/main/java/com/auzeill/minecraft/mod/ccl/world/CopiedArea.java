@@ -64,7 +64,7 @@ public class CopiedArea {
       new BlockPos(area.min.getX() + lengthZ - 1, area.max.getY(), area.min.getZ() + lengthX - 1));
 
     List<IBlockState> newStates = new ArrayList<>(states.size());
-    newStates.addAll(states);
+    newStates.addAll(states); 
     for (int x = 0; x < lengthX; x++) {
       for (int z = 0; z < lengthZ; z++) {
         for (int y = 0; y < lengthY; y++) {
